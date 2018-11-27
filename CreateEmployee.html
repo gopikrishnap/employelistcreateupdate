@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="../../../system/libs/mowbly/themes/default/css/default.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/CreateEmployee.css">
+	</link>
+	<link rel="stylesheet" type="text/css" href="css/CommonCss.css">
+	</link>
+	<!-- Add your stylesheets here -->
+	<script src="../../../system/libs/mowbly/js/mowbly.js"></script>
+	<script src="../../../system/libs/mowbly/js/juci-0.2.js"></script>
+	<!-- Add your scripts here -->
+
+	<script src="scripts/employeelist.js"></script>
+	<script src="scripts/CreateEmployee.js"></script>
+
+
+</head>
+
+<body>
+	<div data-juci="panel" data-first-panel>
+		<!-- Enter your HTML content here -->
+		<div data-juci="form" class="Createemp" data-bind="ref:Creatempdetails" id="create123">
+			<div data-juci="text" class="textborder" data-label="Name" data-bind="ref:name" placeholder data-trigger pattern="^[a-z\.?\s\'?A-Z]*$"
+			 id="name"></div>
+			<div data-juci="datepicker" data-picker="dob" id="dob" class="textborder" data-label="Date Of Birth" data-bind="ref:dob"
+			 placeholder="dd/mm/yyyy" onafterchange="Dateofbirth1(event)" id="dob"></div>
+			<div data-juci="tel" class="textborder" data-label="Mobile Number" data-bind="ref:Mobileumber" placeholder
+			 data-trigger pattern="^[0-9]*$" id="mobile"></div>
+			<div data-juci="selectbox" class="textborder" data-label="Position" data-bind="ref:position,optionsList:$root.options"
+			 data-mode="popup" id="position"></div>
+			<div data-juci="text" class="textborder" data-label="Mail id" data-bind="ref:officialemail" placeholder data-trigger
+			 pattern="^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])" id="Email"></div>
+			<div data-juci="password" class="textborder" data-label="Password" data-bind="ref:Password" placeholder data-trigger></div>
+			<div>
+				<button data-juci="button" class="button1" onClick="createemp()" data-bind="visible:$root.b1">Create </button>
+				<button data-juci="button" class="button2" data-bind="visible:$root.b2">Update</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

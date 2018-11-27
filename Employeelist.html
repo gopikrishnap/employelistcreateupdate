@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../system/libs/mowbly/themes/default/css/default.css" type="text/css"/>
+		<!-- Add your stylesheets here -->
+	<link rel="stylesheet" type="text/css" href="css/CommonCss.css"></link>
+		<script src="../../../system/libs/mowbly/js/mowbly.js"></script>
+		<script src="../../../system/libs/mowbly/js/juci-0.2.js"></script>
+		<!-- Add your scripts here -->
+
+		  <script src="scripts/employeelist.js"></script>
+		  	<script src="scripts/CreateEmployee.js"></script>
+	
+	</head>
+	<body>
+		<div data-juci="panel" data-first-panel>
+			<!-- Enter your HTML content here -->
+				<!--	  <div data-juci="form" class="Createemp" data-label="" data-bind="ref:creData"  onsubmit="empdetatlss(event)">
+	                   <div data-juci="text" class="textborder" data-label="Employee Name <span class='star'>*</span>" data-bind="ref:name"  pattern="^[a-z\.?\s\'?A-Z]*$"placeholder data-trigger id="nameE"></div> 
+	                    <div data-juci="text" class="textborder" data-label="Personal Mail id <span class='star'>*</span>" data-bind="ref:personalemail"
+	                   placeholder data-trigger  pattern="^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])" id="pemailE" ></div>
+	                  <div data-juci="datepicker"data-picker="doj" class="textborder" data-label="Date Of Joing <span class='star'>*</span>" data-bind="ref:doj"placeholder = "dd/mm/yyyy"></div>
+	                  <div data-juci="datepicker" data-picker="dob" id = "dob" class="textborder1"  data-label="Date Of Birth<span class='star'>*</span>"  data-bind="ref:dob" placeholder = "dd/mm/yyyy" onafterchange="Dateofbirth(event)" id="dobE"></div> 
+	                  	<div data-juci="number" class="textborder" data-label="Mobile Number" data-bind="ref:Mobileumber" id="mobileE" placeholder data-trigger></div>
+<div data-juci="selectbox" class="textborder1" data-label="Education<span class='star'>*</span>" data-bind="ref:educationdetails,optionsList:$root.optionsedc" data-mode ="popup" id="education" ></div> 
+	                    <div data-juci="text" class="textborder" data-label="Address <span class='star'>*</span>" data-bind="ref:address" id="addressE"
+	                   placeholder data-trigger></div>
+	                   <div data-juci="selectbox" class="textborder" data-label="Position <span class='star'>*</span>" data-bind="ref:position,optionsList:$root.options" data-mode ="popup" id="positionE" ></div>                                                                       	
+	                    <div data-juci="text" class="textborder" data-label="Aadhar Number <span class='star'>*</span>"pattern="^\d{4}\d{4}\d{4}$" data-bind="ref:aadharnum"  placeholder data-trigger></div>
+	                    <div data-juci="text" class="textborder" data-label="Pan Card Number <span class='star'>*</span>" data-bind="ref:pannum" pattern="^[a-zA-Z]{5}[0-9]{4}[a-zA-Z]$" maxlength="10" id="panE"    placeholder data-trigger></div>
+	                    <div data-juci="text" class="textborder" data-label="Id Number" data-bind="ref:idnum" id="idnumE"
+	                   placeholder data-trigger></div>
+	                    <div data-juci="text" class="textborder" data-label="Official Mail Id" data-bind="ref:officialemail"  pattern="^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])"  id="ofemailE" placeholder data-trigger></div>
+	                    <div data-juci="text" class="textborder" data-label="Blood Group" data-bind="ref:bloodgroup" id="bloodE"
+	                   placeholder data-trigger></div>
+	                   <div>
+		                  <button data-juci="button"  class="button2" onclick="Updateemp()">Update</button>
+	                  </div>     
+              </div>-->
+              
+               <div data-juci="xlist" style="display:block" data-bind="ref:creData">
+                        <div data-juci="listitem" class="addresslist"> 
+                           <div class="row">
+                             
+                              <div class="cell mgnlft"  data-bind="html:name" ></div>
+                           </div>
+                           <div class="row">
+                            
+                              <div class="cell mgnlft" data-bind="html:dob"></div>
+                           </div>
+                              <div class="row">
+                            
+                              <div class="cell mgnlft"  data-bind="html:Mobileumber" ></div>
+                           </div>
+                              <div class="row">
+                              
+                              <div class="cell mgnlft"  data-bind="html:position" ></div>
+                           </div>
+                              <div class="row">
+                             
+                              <div class="cell mgnlft"  data-bind="html:officialemail" ></div>
+                           </div>
+                             <div class="row">
+                             
+                              <div class="cell mgnlft"  data-bind="html:Password" ></div>
+                           </div>
+                           <button onclick = "update()">Update</button>
+                        </div>
+                     </div>
+                     
+		</div>
+	</body>
+</html>
